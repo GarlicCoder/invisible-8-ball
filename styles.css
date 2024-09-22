@@ -1,0 +1,51 @@
+* {
+    font-family: Rubik;
+    color: rgb(37, 34, 34);
+}
+
+
+
+body {
+    line-height: 1.2rem;
+    padding: 10px 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.question {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+}
+
+
+
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    font-size: 12px;
+    border: none;
+    background-color: #e5f3f3;
+}
+input[type=text]:focus {
+    background-color: #efe8ed;
+    border: 1px solid rgb(242, 159, 173);
+}
+
+button {
+    padding: 40px;
+    font-size: 14px;
+    border: none;;
+    background-color: rgb(250, 193, 203);
+}
+
+button:hover {
+    background-color: rgb(176, 225, 252);
+}
+
+#answer {
+    font-size: 20px;
+    font-weight: bold;
+}
+
