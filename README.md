@@ -1,7 +1,7 @@
 ## Invisible Magic 8 Ball
 ![](./sample.gif)
 
-Live Site URL: [Invisible Magic 8 Ball]()
+Live Site URL: [Invisible Magic 8 Ball](https://garliccoder.github.io/invisible-8-ball/)
 
 ### Table of Contents
 - [Descripton](#description)

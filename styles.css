@@ -44,8 +44,19 @@ button:hover {
     background-color: rgb(176, 225, 252);
 }
 
-#answer {
-    font-size: 20px;
-    font-weight: bold;
+.answer-section {
+    animation: fadeIn 5s;
+
 }
 
+#answer {
+    font-size: 20px;
+    font-weight: bold; 
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  
