@@ -14,7 +14,7 @@ Live Site URL: [Invisible Magic 8 Ball](https://garliccoder.github.io/invisible-
 A page where you can ask any yes/no questions to help you make decisions!
 
 ## **My Process:**
-I followed a Javascript tutorial from [Codex.io](codex.io) to create a Magic 8 Ball through the Console. I wanted to be able to use it outside the Console so I tried recreating it into a Web Page!
+I followed a Javascript tutorial from [Codedex.io](https://www.codedex.io/) to create a Magic 8 Ball through the Console. I wanted to be able to use it outside the Console so I tried recreating it into a Web Page!
 
 **Coding Language**: HTML, CSS, Javascript
 
@@ -24,6 +24,6 @@ I followed a Javascript tutorial from [Codex.io](codex.io) to create a Magic 8 B
 [Github.com/GarlicCoder](https://github.com/GarlicCoder/)
 
 ## **Acknowledgments:**
-Codex: JavaScript Tutorial 
-8Ball Javascript Tutorial
-Github Repository
+CodeDex: [Magic 8 Ball Tutorial](https://www.codedex.io/javascript/15-magic-8-ball) 
+
+Mitchum: [How to Build A Magic Eight Ball With Javascript](https://mitchum.blog/how-to-build-a-magic-eight-ball-with-javascript/)
