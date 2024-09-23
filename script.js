@@ -15,6 +15,9 @@ let answers = [
     'Heck yeah!',
     'No, no noo!!!!!',
     'Refresh the page',
+    'I\'m leaning towards yes!',
+    'I\'m leaning towards no!',
+    'Try asking someone else...'
   ]
   
   let displayAnswer = function()
