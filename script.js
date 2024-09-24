@@ -18,9 +18,8 @@ let answers = [
     'I\'m leaning towards yes!',
     'I\'m leaning towards no!',
     'Try asking someone else...',
-        'Uh, I actually don\'t know the answer to this one.',
-            'Sorry, I had my airpods in. Can you ask again?',
-
+    'Uh, I actually don\'t know the answer to this one.',
+    'Sorry, I had my airpods in. Can you ask again?'
   ]
   
   let displayAnswer = function()
