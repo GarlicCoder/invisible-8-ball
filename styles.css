@@ -129,12 +129,16 @@ button:hover {
     height: 200px;
     border-radius: 50%;
     background-color: var(--main);
-    margin-bottom: 20px;
+    margin: 20px auto; /* Center with automatic margins */
     cursor: pointer;
     box-shadow: 0 0 5px var(--light-pink), 0 0 10px var(--light-pink), 0 0 20px var(--light-pink);
-    transition: all 0.2s ease-in-out;
+    transition: transform 0.5s ease; /* Smooth transition for transform */
   }
   
+  .animate {
+    transform: scale(1.1) rotate(360deg); 
+}
+
   .ball-number {
     position: absolute;
     top: 50%;
@@ -143,6 +147,7 @@ button:hover {
     color: #fff;
     font-size: 5rem;
     font-weight: bold;
+    text-align: center;
   }
 
 
@@ -168,6 +173,10 @@ button:hover {
   }
 
   @media (max-width: 600px) {
+    body {
+        line-height: 1.5;
+    }
+    
     .ball {
         width: 120px; /* Adjusted for smaller screens */
         height: 120px; /* Adjusted for smaller screens */

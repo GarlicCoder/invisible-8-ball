@@ -26,31 +26,26 @@ let answers = [
     'I\m like 50-50 (rip fifty fifty 😢)'
   ]
   
-  let displayAnswer = function()
-  {
-    let index = Math.floor(Math.random() * answers.length);
-    let answer = answers[index];
-    let element = document.getElementById( 'answer' );
-    element.innerHTML = '<br>' + answer;
-  }
 
 
-  const rotateBall = () => {
-    let rotation = Math.floor(Math.random() * 180) + 90;
-    const rotateInterval = setInterval(() => {
-      rotation += Math.floor(Math.random() * 10) + 30;
-      ballElement.style.transform = `rotate(${rotation}deg)`;
-      if (rotation >= 360) {
-        clearInterval(rotateInterval);
-        setTimeout(() => {
-          showAnswer();
-          ballElement.style.transform = 'rotate(0deg)';
-        }, 1000);
-      }
-    }, 10);
-  };
+  // JavaScript
+function displayAnswer() {
+  const ball = document.querySelector('.ball');
+  const answer = document.getElementById('answer');
 
-  function myFunction() {
-    var popup = document.getElementById("instructions");
-    popup.classList.toggle("show");
-  }
+  // Add animation class
+  ball.classList.add('animate');
+
+  // Simulate getting an answer
+  const answers = ["Yes", "No", "Maybe", "Ask again later"];
+  const randomAnswer = answers[Math.floor(Math.random() * answers.length)];
+  answer.textContent = randomAnswer;
+
+  // Remove the animation class after the animation duration
+  setTimeout(() => {
+      ball.classList.remove('animate');
+  }, 500); 
+}
+
+
+  
