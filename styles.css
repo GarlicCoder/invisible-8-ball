@@ -1,15 +1,54 @@
+:root {
+--text: rgb(46, 46, 46);
+--main: rgb(254, 195, 204);
+--secondary: rgb(255, 164, 179);
+--light-pink: #e5f3f3;
+}
 * {
     font-family: Rubik;
-    color: rgb(37, 34, 34);
+    color: var(--text);
 }
 
+a {
+    color: var(--secondary);
+}
 
+a:hover {
+    color: var(--main);
+}
 
 body {
     line-height: 1.2rem;
     padding: 10px 20px;
     text-align: center;
     justify-content: center;
+}
+
+.header {
+    justify-content: center;
+}
+
+.header h2 {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.footer {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.line {
+    width: 90%;
+    text-align: center;
+    border-bottom: 1px solid var(--light-pink);
+    margin: 5px 0;
 }
 
 .question {
@@ -22,26 +61,26 @@ body {
 
 
 input[type=text] {
-    width: 50%;
-    padding: 12px 20px;
+    width: 100%;
+    padding: 12px 10px;
     font-size: 12px;
     border: none;
-    background-color: #e5f3f3;
+    background-color: var(--light-pink);
 }
 input[type=text]:focus {
-    background-color: #efe8ed;
-    border: 1px solid rgb(242, 159, 173);
+    background-color: var(--light-pink);
+    border: 1px solid var(--main);
 }
 
 button {
     padding: 40px;
     font-size: 14px;
     border: none;;
-    background-color: rgb(250, 193, 203);
+    background-color: var(--main);
 }
 
 button:hover {
-    background-color: rgb(176, 225, 252);
+    background-color: var(--secondary);
 }
 
 .answer-section {
@@ -62,11 +101,63 @@ button:hover {
   .instructions {
     text-align: left;
     justify-content: center;
-    border: 2px dashed salmon;
+    border: 2px dashed var(--secondary);
     padding: 12px;
     width: 50%;
     margin: 10px 0;
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
+  }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 500px;
+}
+
+  .ball {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--main);
+    margin-bottom: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 5px var(--light-pink), 0 0 10px var(--light-pink), 0 0 20px var(--light-pink);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .ball-number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 5rem;
+    font-weight: bold;
+  }
+
+
+.container:focus-within .answer {
+    transform: translateY(-50px);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
   }

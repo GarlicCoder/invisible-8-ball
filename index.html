@@ -11,9 +11,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div class="header">
+      <h2>Magic 8 Ball</h2>
+     <!--
+      <div class="right"><a href="">Instructions</a></div>--> 
+      <div class="line"></div>
+    </div>
 
-    <h1>Ask the Invisible Magic 8 Ball</h1>
+    <h1>Ask the Magic 8 Ball</h1>
     <p>Use the Invisible Magic 8 Ball to answer your questions and make decisions!</p>
+    <div class="container">
+      <div class="ball">
+        <div class="ball-number">8</div>
+      </div>   
+      <div class="answer-section">
+        <div id="answer">
+        </div>
+      </div>
+    </div>
+  <br>
+    
 
     <div class="question">
       <input type="text" placeholder="Ask your question here">
@@ -21,20 +38,13 @@
         <button onclick="displayAnswer()">Reveal the Answer</button>
       </div>
     </div>
-    
-    <div class="answer-section">
-      <div id="answer">
-      </div>
-    </div>
-    
+
 <br>
 
-<div class="instructions">
-  <h3>Instructions</h3>
-  <ol>
-    <li>Ask a yes or no question</li>
-    <li>Click "Reveal the Answer"</li>
-  </ol>
+
+<div class="footer">
+  <div class="line"></div>
+  <p>Coded by <a href="https://github.com/GarlicCoder">@GarlicCoder</a></p>
 </div>
 
    <script src="./script.js"></script>
