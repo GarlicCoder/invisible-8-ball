@@ -37,7 +37,6 @@ function displayAnswer() {
   ball.classList.add('animate');
 
   // Simulate getting an answer
-  const answers = ["Yes", "No", "Maybe", "Ask again later"];
   const randomAnswer = answers[Math.floor(Math.random() * answers.length)];
   answer.textContent = randomAnswer;
 

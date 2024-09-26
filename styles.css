@@ -129,10 +129,10 @@ button:hover {
     height: 200px;
     border-radius: 50%;
     background-color: var(--main);
-    margin: 20px auto; /* Center with automatic margins */
+    margin: 20px auto; 
     cursor: pointer;
     box-shadow: 0 0 5px var(--light-pink), 0 0 10px var(--light-pink), 0 0 20px var(--light-pink);
-    transition: transform 0.5s ease; /* Smooth transition for transform */
+    transition: transform 0.5s ease; 
   }
   
   .animate {
@@ -178,16 +178,16 @@ button:hover {
     }
     
     .ball {
-        width: 120px; /* Adjusted for smaller screens */
-        height: 120px; /* Adjusted for smaller screens */
+        width: 120px;
+        height: 120px; 
     }
 
     .ball-number {
-        font-size: 2.5rem; /* Smaller number for mobile */
+        font-size: 2.5rem; 
     }
 
     button {
-        padding: 10px; /* Reduced padding for mobile */
-        font-size: 14px; /* Slightly smaller font size */
+        padding: 10px; 
+        font-size: 14px;
     }
 }
