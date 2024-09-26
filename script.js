@@ -10,6 +10,7 @@ let answers = [
     'Signs point to yes.',
     'No.',
     'Yes.',
+    'That\s a weird question!',
     'Nope.',
     'Don\'t count on it.',
     'Heck yeah!',
@@ -19,7 +20,10 @@ let answers = [
     'I\'m leaning towards no!',
     'Try asking someone else...',
     'Uh, I actually don\'t know the answer to this one.',
-    'Sorry, I had my airpods in. Can you ask again?'
+    'Sorry, I had my airpods in. Can you ask again?',
+    '100% yes, no questions asked.',
+    '100% no, that sounds ridiculous.',
+    'I\m like 50-50 (rip fifty fifty 😢)'
   ]
   
   let displayAnswer = function()
