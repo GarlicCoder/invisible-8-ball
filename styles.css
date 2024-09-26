@@ -5,6 +5,7 @@
 --light-pink: #e5f3f3;
 }
 * {
+    box-sizing: border-box; 
     font-family: Rubik;
     color: var(--text);
 }
@@ -37,25 +38,26 @@ body {
 }
 
 .footer {
-    bottom: 0;
-    left: 0;
-    position: fixed;
+
+    position: relative;
     width: 100%;
     margin: 10px 0;
+    
 }
 
 .line {
     width: 90%;
     text-align: center;
     border-bottom: 1px solid var(--light-pink);
-    margin: 5px 0;
+    margin: 5px auto;
 }
 
 .question {
     display: flex;
+    flex-direction: column;
     gap: 10px;
     justify-content: center;
-    margin: 0 30px;
+    margin: 0 20px;
 
 }
 
@@ -63,8 +65,8 @@ body {
 
 input[type=text] {
     width: 100%;
-    padding: 12px 10px;
-    font-size: 12px;
+    padding: 30px 15px;
+    font-size: 14px;
     border: none;
     background-color: var(--light-pink);
 }
@@ -74,10 +76,11 @@ input[type=text]:focus {
 }
 
 button {
-    padding: 40px;
-    font-size: 14px;
+    padding: 20px 12px;
+    font-size: 16px;
     border: none;;
     background-color: var(--main);
+    width: 100%;
 }
 
 button:hover {
@@ -162,3 +165,19 @@ button:hover {
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
   }
+
+  @media (max-width: 600px) {
+    .ball {
+        width: 120px; /* Adjusted for smaller screens */
+        height: 120px; /* Adjusted for smaller screens */
+    }
+
+    .ball-number {
+        font-size: 2.5rem; /* Smaller number for mobile */
+    }
+
+    button {
+        padding: 10px; /* Reduced padding for mobile */
+        font-size: 14px; /* Slightly smaller font size */
+    }
+}
