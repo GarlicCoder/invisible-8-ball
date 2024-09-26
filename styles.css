@@ -116,10 +116,11 @@ button:hover {
 
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Stack elements vertically */
     align-items: center;
     justify-content: center;
-    min-width: 500px;
+    width: 100%; /* Full width for mobile */
+    padding: 0 10px; /* Add some padding on mobile */
 }
 
   .ball {
